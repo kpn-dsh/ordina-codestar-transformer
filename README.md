@@ -32,11 +32,13 @@
 
 - c. Create a service on the DSH with the name "transformer-group-1" <--- add the correct group number. Also change the service config on the DSH with the correct image name e.g: "image": "registry.cp.kpn-dsh.com/ordina-codestar-1/transformer-group-1:1"
 
-- d. Search for an api to get the current bitcoin price. 
+- d. docker login registry.cp.kpn-dsh.com. You can find your credentials in the image repo under the userprofile.
 
-- e. Add the bitcoin price to each event and write this to another stream with the name "internal.gecombineerd-ordina-codestar-1"
+- e. Search for an api to get the current bitcoin price. 
 
-- f. In this workshop there a multiple groups producing on this stream. Please make sure to add a key to the message {value="hello" ,group:"group-1"}. We can use this identifier to only print messages intended for your group.
+- f. Add the bitcoin price to each event and write this to another stream with the name "internal.gecombineerd-ordina-codestar-1"
+
+- g. In this workshop there a multiple groups producing on this stream. Please make sure to add a key to the message {value="hello" ,group:"group-1"}. We can use this identifier to only print messages intended for your group.
 
 
 - *It's important to push the changes to the image repository so you can test it on the DSH. Also make sure you restart the service*
