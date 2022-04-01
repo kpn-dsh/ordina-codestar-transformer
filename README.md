@@ -1,8 +1,10 @@
 # Algemeen
 
-- docker image repo : https://registry.cp.kpn-dsh.com/
+docker image repo : https://registry.cp.kpn-dsh.com/
+dsh console : https://console.poc.kpn-dsh.com
 
 # 1 ) Uitvoeren
+
 command : docker login registry.cp.kpn-dsh.com
 command : make all
 
