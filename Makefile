@@ -2,7 +2,7 @@ PLATFORM=poc
 TENANT=ordina-codestar-1
 DOCKER_REPO_URL=registry.cp.kpn-dsh.com/$(TENANT)
 VERSION:=1
-tagname=transformer
+tagname=transformer-group-1
 tenantuserid=2036
 image=$(DOCKER_REPO_URL)/$(tagname):$(VERSION)
 help:
