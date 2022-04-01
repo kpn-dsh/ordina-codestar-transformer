@@ -9,7 +9,7 @@ choco install make
 ```bash
 {
 	"name": "transformer-group-1",
-	"image": "registry.cp.kpn-dsh.com/ordina-codestar-1/transformer:1",
+	"image": "registry.cp.kpn-dsh.com/ordina-codestar-1/transformer-group-1:1",
 	"cpus": 0.1,
 	"mem": 256,
 	"env": {
@@ -24,10 +24,16 @@ choco install make
 }
 ```
 
+# TENANT ordina-codestar-1
+
 # 1 ) Opdracht uitvoeren
-- a. Print de events uit de stream "stream.training" , zie https://kafka.js.org/docs/getting-started
-- b. Zoek een publieke API om de huidge bitcoin prijs mee op te halen. 
-- c. Voeg de huidge bitcoin prijs toe aan elke event en schrijf deze weg naar de stream "internal.gecombineerd-ordina-codestar-1" 
+- a. Pas de groepsnummer aan in de makefile
+- b. Print de events uit de stream "stream.training" , zie https://kafka.js.org/docs/getting-started
+- c. Maak een service aan op de DSH met de naam en image "transformer-group-1" <--- voeg de juiste groepsnummer toe
+- d. Zoek een publieke API om de huidge bitcoin prijs mee op te halen. 
+- e. Voeg de huidge bitcoin prijs toe aan elke event en schrijf deze weg naar de stream "internal.gecombineerd-ordina-codestar-1" 
+
+- *bij elke aanpassing wordt geacht om de wijzigingen te pushen en te testen op de DSH (make all) & services restarten op de DSH*
 
 # 2 ) Nieuwe image bakken en pushen.
 ```sh
