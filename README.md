@@ -36,7 +36,7 @@
 
 - e. Add the bitcoin price to each event and write this to another stream with the name "internal.gecombineerd-ordina-codestar-1"
 
-- f. There a multiple groups producing on this stream. Please make sure to add a key to the message {value="hello" ,group:"group-1"}. We can use this identifier to only print messages intended for your group.
+- f. In this workshop there a multiple groups producing on this stream. Please make sure to add a key to the message {value="hello" ,group:"group-1"}. We can use this identifier to only print messages intended for your group.
 
 
 - *It's important to push the changes to the image repository so you can test it on the DSH. Also make sure you restart the service*
