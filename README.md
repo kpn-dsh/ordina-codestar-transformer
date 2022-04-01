@@ -28,7 +28,7 @@
 # 1 ) Assignments
 - a. Change the group number in the makefile. e.g: "tagname=transformer-group-1" <--- add the correct group number. 
 
-- b. Print events from the stream "internal.gecombineerd-ordina-codestar-1", see https://kafka.js.org/docs/getting-started.
+- b. Print events from the stream "stream.training", see https://kafka.js.org/docs/getting-started.
 
 - c. Create a service on the DSH with the name "transformer-group-1" <--- add the correct group number. Also change the service config on the DSH with the correct image name e.g: "image": "registry.cp.kpn-dsh.com/ordina-codestar-1/transformer-group-1:1"
 
