@@ -9,7 +9,7 @@ command : docker login registry.cp.kpn-dsh.com
 command : make all
 ```
 
-# 3 ) Voorbeeld config @ DSH
+# 2 ) Voorbeeld config @ DSH
 ```bash
 {
 	"name": "transformer-group-1",
