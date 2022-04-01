@@ -1,15 +1,11 @@
-# Algemeen
+# Wat heb je nodig ?
 
-- docker image repo : https://registry.cp.kpn-dsh.com/
-- dsh console : https://console.poc.kpn-dsh.com
-
-# 1 ) Uitvoeren
-```sh
-command : docker login registry.cp.kpn-dsh.com
-command : make all
-```
-
-# 2 ) Voorbeeld config @ DSH
+- Toegang tot de docker image repo  -> https://registry.cp.kpn-dsh.com/
+- Toegang tot dsh console           -> https://console.poc.kpn-dsh.com
+- Docker                            -> https://hub.docker.com/_/hello-world
+- Make                              -> https://chocolatey.org/install en vervolgens voer uit 
+choco install make  
+- Voorbeeld config voor de DSH
 ```bash
 {
 	"name": "transformer-group-1",
@@ -26,4 +22,12 @@ command : make all
 	"needsToken": true,
 	"user": "2036:2036"
 }
+```
+
+# 1 ) Opdracht uitvoeren
+
+# 2 ) Nieuwe image bakken en pushen.
+```sh
+command : docker login registry.cp.kpn-dsh.com
+command : make all
 ```
